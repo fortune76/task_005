@@ -6,9 +6,9 @@ void _exception() {
     exit(EXIT_FAILURE);
 }
 
-void output_cities(char *cities) { printf("%s\n", cities); }
+void _output_cities(char *cities) { printf("%s\n", cities); }
 
-void output_hours(int hours) { printf("%d", hours); }
+void _output_hours(int hours) { printf("%d", hours); }
 
 /* Чтение из файла */
 void _read_way(City *way, char *file_path) {
@@ -60,14 +60,14 @@ void _calc_way(City *way, int size) {
     }
     strcat(result, "\n");
     strcat(result, way[size - 1].name);
-    output_cities(result);
+    _output_cities(result);
     if (total_hours != 0) {
         total_hours += time_to_dest;
     } else {
         total_hours += travel_hours;
     }
 
-    output_hours(total_hours);
+    _output_hours(total_hours);
 }
 
 /* Вычисление размера файла */

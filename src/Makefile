@@ -16,6 +16,4 @@ travel: $(TRAVEL)travel.c $(TRAVEL)calc_travel.c
 clean:
 	rm -f $(BIN)*
 
-rebuild: 
-	clean all
-
+rebuild: clean all

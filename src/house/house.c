@@ -1,4 +1,5 @@
-#include "house.h"
+#include <stdlib.h>
+#include "calc_house.h"
 
 int main() {
     calc_house();
