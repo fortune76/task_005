@@ -1,9 +1,9 @@
 GC=gcc
 FLAGS=-Wall -Wextra -Werror
 BIN=../bin/
-HOUSE=house/
-TRAVEL=travel/
-MORSE=morse/
+HOUSE=house_task/
+TRAVEL=travel_task/
+MORSE=morse_task/
 
 all: house travel
 
